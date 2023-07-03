@@ -1,0 +1,360 @@
+name: Jerry
+version: 2
+projectReferences: 
+  - /FCC
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Jerry/src
+        type: javaClasspath
+  - name: co1.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 10.5.2.0
+    properties: 
+      description: 'Test(s): 
+
+	dataset
+
+'
+      name: co1
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EE1673B63D12D0F439E33237363536
+    dependencies: 
+      - path: /Jerry/dataset.testsuite
+        type: scheduleInvokedTest
+      - path: /Jerry/set.csv
+        type: scheduleDatapool
+  - name: co1_1688056233898.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056233898
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056233898_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056233898_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056233898_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056233898_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056236123.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056233898_orch!system.mstats
+  - name: co1_1688056233898_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056233898_perf!localhost.mstats
+  - name: co1_1688056233898_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056236123.executiondlr
+  - name: co1_1688056363111.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056363111
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056363111_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056363111_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056363111_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056363111_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056365030.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056363111_orch!system.mstats
+  - name: co1_1688056363111_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056363111_perf!localhost.mstats
+  - name: co1_1688056363111_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056365030.executiondlr
+  - name: co1_1688056495499.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056495499
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056495499_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056495499_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056495499_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056495499_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056497663.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056495499_orch!system.mstats
+  - name: co1_1688056495499_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056495499_perf!localhost.mstats
+  - name: co1_1688056495499_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056497663.executiondlr
+  - name: co1_1688056599062.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056599062
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056599062_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056599062_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056599062_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056599062_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056601021.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056599062_orch!system.mstats
+  - name: co1_1688056599062_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056599062_perf!localhost.mstats
+  - name: co1_1688056599062_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056601021.executiondlr
+  - name: co1_1688056742233.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056742233
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056742233.xmoebreport
+        type: statsSessionAsset
+      - path: /Jerry/co1_1688056742233_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056742233_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056742233_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056742233_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056744162.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056742233.xmoebreport
+  - name: co1_1688056742233_orch!system.mstats
+  - name: co1_1688056742233_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056742233_perf!localhost.mstats
+  - name: co1_1688056742233_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056744162.executiondlr
+  - name: co1_1688056848020.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056848020
+      tags: 
+      testId: A1EE1673B63D12D0F439E33237363536
+      testName: co1
+    dependencies: 
+      - path: /Jerry/co1.testsuite
+        type: statsSessionTest
+      - path: /Jerry/co1_1688056848020.xmoebreport
+        type: statsSessionAsset
+      - path: /Jerry/co1_1688056848020_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056848020_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056848020_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056848020_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/co1_1688056849963.executiondlr
+        type: statsSessionAsset
+  - name: co1_1688056848020.xmoebreport
+  - name: co1_1688056848020_orch!system.mstats
+  - name: co1_1688056848020_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056848020_perf!localhost.mstats
+  - name: co1_1688056848020_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: co1_1688056849963.executiondlr
+  - name: co2.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 10.5.2.0
+    properties: 
+      description: 'Test(s): 
+
+	data
+
+'
+      name: co2
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EE169463186CA0F439E33237363536
+    dependencies: 
+      - path: /Jerry/data.testsuite
+        type: scheduleInvokedTest
+  - name: data.recdata
+  - name: data.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Jerry/data.recdata
+        type: recsessionRecdata
+  - name: data.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 10.5.2.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EE169498C014C0F439E33237363536
+    dependencies: 
+      - path: /Jerry/data.recsession
+        type: testRecsession
+      - path: /Jerry/set.csv
+        type: testDatapool
+      - path: /Jerry/ww_bing_com_7b6.ma
+        type: test#moeb.applicationPackage
+  - name: dataset.recdata
+  - name: dataset.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Jerry/dataset.recdata
+        type: recsessionRecdata
+  - name: dataset.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 10.5.2.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EE16725965F140F439E33237363536
+    dependencies: 
+      - path: /FCC/oogle_co_in_e02.ma
+        type: test#moeb.applicationPackage
+      - path: /Jerry/.classpath
+        type: testJavaClasspath
+      - path: /Jerry/dataset.recsession
+        type: testRecsession
+      - path: /Jerry/set.csv
+        type: testDatapool
+      - path: /Jerry/src/Customcode/Jerry.java
+        type: testCustomCode
+  - name: dataset_1688056525085.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688056525085
+      tags: 
+      testId: A1EE16725965F140F439E33237363536
+      testName: dataset
+    dependencies: 
+      - path: /Jerry/dataset.testsuite
+        type: statsSessionTest
+      - path: /Jerry/dataset_1688056525085_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688056525085_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688056525085_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688056525085_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688056527022.executiondlr
+        type: statsSessionAsset
+  - name: dataset_1688056525085_orch!system.mstats
+  - name: dataset_1688056525085_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688056525085_perf!localhost.mstats
+  - name: dataset_1688056525085_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688056527022.executiondlr
+  - name: dataset_1688057081187.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688057081187
+      tags: 
+      testId: A1EE16725965F140F439E33237363536
+      testName: dataset
+    dependencies: 
+      - path: /Jerry/dataset.testsuite
+        type: statsSessionTest
+      - path: /Jerry/dataset_1688057081187.xmoebreport
+        type: statsSessionAsset
+      - path: /Jerry/dataset_1688057081187_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057081187_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057081187_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057081187_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057083135.executiondlr
+        type: statsSessionAsset
+  - name: dataset_1688057081187.xmoebreport
+  - name: dataset_1688057081187_orch!system.mstats
+  - name: dataset_1688057081187_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688057081187_perf!localhost.mstats
+  - name: dataset_1688057081187_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688057083135.executiondlr
+  - name: dataset_1688057171787.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1688057171787
+      tags: 
+      testId: A1EE16725965F140F439E33237363536
+      testName: dataset
+    dependencies: 
+      - path: /Jerry/dataset.testsuite
+        type: statsSessionTest
+      - path: /Jerry/dataset_1688057171787.xmoebreport
+        type: statsSessionAsset
+      - path: /Jerry/dataset_1688057171787_orch!system.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057171787_orch!system.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057171787_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057171787_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Jerry/dataset_1688057173834.executiondlr
+        type: statsSessionAsset
+  - name: dataset_1688057171787.xmoebreport
+  - name: dataset_1688057171787_orch!system.mstats
+  - name: dataset_1688057171787_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688057171787_perf!localhost.mstats
+  - name: dataset_1688057171787_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: dataset_1688057173834.executiondlr
+  - name: set.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /Jerry/set.csv.metadata
+        type: datasetMetadata
+  - name: set.csv.metadata
+  - name: src
+    resources: 
+      - name: Customcode
+        resources: 
+          - name: Jerry.java
+      - name: test
+        resources: 
+          - name: Co1_CompoundTest_A1EE1673B63D12D0F439E33237363536.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Dataset_Test_A1EE16725965F140F439E33237363536.java
+            type: com.ibm.rational.test.lt.generatedCode
+  - name: ww_bing_com_7b6.ma
+    type: moeb.applicationPackage
