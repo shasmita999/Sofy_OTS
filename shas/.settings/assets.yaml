@@ -1,0 +1,211 @@
+name: shas
+version: 2
+projectReferences: 
+  - /Sofy_OTS
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /shas/src
+        type: javaClasspath
+  - name: _google_com_a3a.ma
+    type: moeb.applicationPackage
+  - name: chrom(2).recdata
+  - name: chrom(2).recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /shas/chrom(2).recdata
+        type: recsessionRecdata
+  - name: chrom.recdata
+  - name: chrom.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /shas/chrom.recdata
+        type: recsessionRecdata
+  - name: chrom.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 10.5.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EE3089EA012360EF37E46136663136
+    dependencies: 
+      - path: /Sofy_OTS/shas/_google_com_a3a.ma
+        type: test#moeb.applicationPackage
+      - path: /shas/chrom(2).recsession
+        type: testRecsession
+  - name: comm.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 10.5.4.0
+    properties: 
+      description: 'Test(s): 
+
+	chrom
+
+	ed
+
+'
+      name: comm
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EE308A5473CF40EF37E46136663136
+    dependencies: 
+      - path: /shas/chrom.testsuite
+        type: scheduleInvokedTest
+      - path: /shas/ed.testsuite
+        type: scheduleInvokedTest
+  - name: comm_1690908320369.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1690908320369
+      tags: 
+      testId: A1EE308ACA953420EF37E46136663136
+      testName: comm
+    dependencies: 
+      - path: /shas/comm.testsuite
+        type: statsSessionTest
+      - path: /shas/comm_1690908320369.xmoebreport
+        type: statsSessionAsset
+      - path: /shas/comm_1690908320369_orch!system.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690908320369_orch!system.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690908320369_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690908320369_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690908347964.executiondlr
+        type: statsSessionAsset
+  - name: comm_1690908320369.xmoebreport
+  - name: comm_1690908320369_orch!system.mstats
+  - name: comm_1690908320369_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690908320369_perf!localhost.mstats
+  - name: comm_1690908320369_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690908347964.executiondlr
+  - name: comm_1690994966316.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1690994966316
+      tags: 
+      testId: A1EE315489566AE0C2D7B33838633335
+      testName: comm
+    dependencies: 
+      - path: /shas/comm.testsuite
+        type: statsSessionTest
+      - path: /shas/comm_1690994966316.xmoebreport
+        type: statsSessionAsset
+      - path: /shas/comm_1690994966316_orch!system.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690994966316_orch!system.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690994966316_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690994966316_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690994992099.executiondlr
+        type: statsSessionAsset
+  - name: comm_1690994966316.xmoebreport
+  - name: comm_1690994966316_orch!system.mstats
+  - name: comm_1690994966316_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690994966316_perf!localhost.mstats
+  - name: comm_1690994966316_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690994992099.executiondlr
+  - name: comm_1690995264069.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1690995264069
+      tags: 
+      testId: A1EE308A5473CF40EF37E46136663136
+      testName: comm
+    dependencies: 
+      - path: /shas/comm.testsuite
+        type: statsSessionTest
+      - path: /shas/comm_1690995264069.xmoebreport
+        type: statsSessionAsset
+      - path: /shas/comm_1690995264069_orch!system.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995264069_orch!system.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995264069_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995264069_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995266325.executiondlr
+        type: statsSessionAsset
+  - name: comm_1690995264069.xmoebreport
+  - name: comm_1690995264069_orch!system.mstats
+  - name: comm_1690995264069_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690995264069_perf!localhost.mstats
+  - name: comm_1690995264069_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690995266325.executiondlr
+  - name: comm_1690995329175.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1690995329175
+      tags: 
+      testId: A1EE308A5473CF40EF37E46136663136
+      testName: comm
+    dependencies: 
+      - path: /shas/comm.testsuite
+        type: statsSessionTest
+      - path: /shas/comm_1690995329175.xmoebreport
+        type: statsSessionAsset
+      - path: /shas/comm_1690995329175_orch!system.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995329175_orch!system.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995329175_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995329175_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /shas/comm_1690995331373.executiondlr
+        type: statsSessionAsset
+  - name: comm_1690995329175.xmoebreport
+  - name: comm_1690995329175_orch!system.mstats
+  - name: comm_1690995329175_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690995329175_perf!localhost.mstats
+  - name: comm_1690995329175_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: comm_1690995331373.executiondlr
+  - name: ed.recdata
+  - name: ed.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /shas/ed.recdata
+        type: recsessionRecdata
+  - name: ed.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 10.5.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EE308A449E28E0EF37E46136663136
+    dependencies: 
+      - path: /Sofy_OTS/shas/_google_com_a3a.ma
+        type: test#moeb.applicationPackage
+      - path: /shas/ed.recsession
+        type: testRecsession
+  - name: edge.recdata
+  - name: edge.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /shas/edge.recdata
+        type: recsessionRecdata
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: Chrom_Test_A1EE3089EA012360EF37E46136663136.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Comm_CompoundTestInSchedule_A1EE308A5473CF40EF37E46136663136.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Comm_CompoundTest_A1EE308A5473CF40EF37E46136663136.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Ed_Test_A1EE308A449E28E0EF37E46136663136.java
+            type: com.ibm.rational.test.lt.generatedCode

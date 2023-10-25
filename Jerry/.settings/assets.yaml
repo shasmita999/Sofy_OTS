@@ -1,7 +1,6 @@
 name: Jerry
 version: 2
 projectReferences: 
-  - /FCC
 resources: 
   - name: .classpath
     type: com.ibm.rational.test.lt.classpath
@@ -10,7 +9,7 @@ resources:
         type: javaClasspath
   - name: co1.testsuite
     type: com.ibm.rational.test.lt.scenario
-    version: 10.5.2.0
+    version: 10.5.4.0
     properties: 
       description: 'Test(s): 
 
@@ -195,7 +194,7 @@ resources:
   - name: co1_1688056849963.executiondlr
   - name: co2.testsuite
     type: com.ibm.rational.test.lt.scenario
-    version: 10.5.2.0
+    version: 10.5.4.0
     properties: 
       description: 'Test(s): 
 
@@ -216,7 +215,7 @@ resources:
         type: recsessionRecdata
   - name: data.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 10.5.2.0
+    version: 10.5.4.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest
@@ -236,14 +235,12 @@ resources:
         type: recsessionRecdata
   - name: dataset.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 10.5.2.0
+    version: 10.5.4.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest
       uid: A1EE16725965F140F439E33237363536
     dependencies: 
-      - path: /FCC/oogle_co_in_e02.ma
-        type: test#moeb.applicationPackage
       - path: /Jerry/.classpath
         type: testJavaClasspath
       - path: /Jerry/dataset.recsession
